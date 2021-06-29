@@ -1,9 +1,9 @@
 import random
 
-ladder ={4:56, 22:72, 41:95}
-snake ={48:6, 94:50, 75:10}
+ladder ={4:56, 22:72, 41:95, 68:97}
+snake ={48:6, 94:50, 75:10, 98:78}
 pos1 = 0
-
+pos2 = 0
 def move(pos):
     dice=random.randint(1,6)
     if dice == 1:
@@ -38,8 +38,13 @@ def move(pos):
     return pos
 
 while True:
-    A = input("Press \"ENTER\" to throw dice ")
+    A = input("Player 1 Press \"ENTER\" to throw dice ")
     pos1 = move(pos1)
     if pos1 == 100:
-        print("Cobratulations you WON! \U0001F3C6")
+        print("Congratulations Player 1 WINS! \U0001F3C6")
+        break
+    B = input("Player 2 Press \"ENTER\" to throw dice ")
+    pos2 = move(pos2)
+    if pos2 == 100:
+        print("Congratulations Player 2 WINS! \U0001F3C6")
         break
