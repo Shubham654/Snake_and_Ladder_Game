@@ -29,7 +29,7 @@ def move(pos):
         pos = ladder[pos]
         print(f"Position:{pos}")
     elif pos > 100:
-        print("Invalid move try again. \u274C")
+        print("Try again. \u274C")
         pos = temp_pos
         print(f"Position:{pos}")
     else:
